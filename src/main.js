@@ -1,6 +1,6 @@
 "use strict";
 
-var Dog = require('./Animal.js').Dog;
+let Dog = require('./Animal.js').Dog;
 
-var shiba = new Dog('Shiba');
+let shiba = new Dog('Shiba');
 console.log(shiba.greeting());

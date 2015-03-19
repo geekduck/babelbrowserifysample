@@ -1,17 +1,22 @@
 "use strict";
 
-function Super(name){
-  this.name = name;
+class Super{
+  constructor(name){
+    this.name = name;
+  }
+  greeting(){
+    return "I'm " + this.name;
+  }
 }
 
-Super.prototype.greeting = function(){
-  return "I'm " + this.name;
-};
-
-function Dog(name){
-  this.name = name;
+class Dog extends Super{
+  constructor(name){
+    super(name);
+  }
+  greeting(){
+    return super.greeting() + " Bow!";
+  }
 }
-Dog.prototype.greeting = Super.prototype.greeting;
 
 exports.Animal = Super;
 exports.Dog = Dog;
