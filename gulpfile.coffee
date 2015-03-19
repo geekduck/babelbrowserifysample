@@ -8,7 +8,7 @@ babelify = require 'babelify'
 sourcemaps = require 'gulp-sourcemaps'
 
 gulp.task 'build', ->
-  browserify { entries: ['./src/main.js'], debug: true }
+  browserify { entries: ['./src/main.es6'], extensions: ['.es6'], debug: true }
     .transform babelify
     .bundle()
     .pipe source 'bundle.js'
