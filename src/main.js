@@ -1,4 +1,4 @@
-let Dog = require('./Animal.js').Dog;
+let Dog = require('./Animal').Dog;
 
 let shiba = new Dog('Shiba');
 console.log(shiba.greeting());
