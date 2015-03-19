@@ -1,9 +1,10 @@
 {
   "name": "babelbrowserifysample",
   "version": "0.0.1",
-  "description": "Using bable and browserify sample.",
+  "description": "Using babel and browserify sample.",
   "main": "index.js",
   "scripts": {
+    "build": "$(npm bin)/babel server.es6 -o server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
