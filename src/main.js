@@ -1,7 +1,6 @@
-(function(){
-  "use strict";
+"use strict";
 
-  var Dog = require('./Animal.js').Dog;
-  var shiba = new Dog('Shiba');
-  console.log(shiba.greeting());
-})();
+var Dog = require('./Animal.js').Dog;
+
+var shiba = new Dog('Shiba');
+console.log(shiba.greeting());
